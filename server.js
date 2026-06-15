@@ -92,8 +92,9 @@ app.post("/webhook", async (req, res) => {
     if (!question) continue;
 
     try {
-      console.log(`📩 Question: ${question}`);
+      console.log(`📩 Question: Incoming`);
       const answer = await askAI(question);
+      console.log(`🤖 Answer: ${answer}`);
       await sendWhatsAppReply(chatId, `🤖 *Agent:*\n${answer}`);
     } catch (err) {
       console.log("❌ Error in agent:", err);
