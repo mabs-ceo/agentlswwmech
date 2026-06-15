@@ -1,0 +1,1487 @@
+[
+  
+  {
+    "Service No": "ME01.06",
+    "Basic Inspection": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Main Equipment",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Pipe and Fittings",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Auxiliary Valves",
+      "Check correct gas pre-charged pressure is maintained"
+    ]
+  },
+  {
+    "Service No": "ME03.03",
+    "Basic Inspection": [
+      "Check indication of the set point and actual temperature",
+      "Check operating pressure and volume flow",
+      "Check for leaks and damage of the equipment",
+      "Visual check on the stem position of inlet and outlet solenoid operated air pilot valves during the catalyst convertor operation. During operation, the stem of the pilot valves will protrude out which indicate that the valves is in working condition.",
+      "Check if the port on the back of catalyst reactor is tight and firmly closed"
+    ]
+  },
+  {
+    "Service No": "ME03.12",
+    "Basic Servicing": [
+      "Maintenance of the safety valves",
+      "Replace inlet and outlet solenoid valves"
+    ]
+  },
+  {
+    "Service No": "MA03.36",
+    "Advanced Servicing": [
+      "Replace the catalyst granules"
+    ]
+  },
+  {
+    "Service No": "ME04.06",
+    "Basic Inspection": [
+      "",
+      "Check duct supports for signs of corrosion; rectify corrosion & touch up",
+      ""
+    ]
+  },
+  {
+    "Service No": "ME05.03",
+    "Basic Servicing": [
+      "Check gear reducer oil level, fill up when necessary",
+      "Check wire mesh condition, replace if necessary",
+      "Check spray nozzles: dismantle one panel - check nozzles are not clogged; remove and clean if necessary; check wash-water pressure; adjust nozzles to ensure entire mesh surface is washed",
+      "Check chain tension, wear of sprocket teeth and chain rollers"
+    ]
+  },
+  {
+    "Service No": "MA05.12",
+    "Advanced Servicing": [
+      "Provide manpower, lubricants, special tools and handling devices to inspect and record measurements, make recommendations, drain and refill gear reducer oil and grease bearings as per O&M manual"
+    ]
+  },
+  {
+    "Service No": "ME05.03",
+    "Basic Servicing": [
+      "Grease bearings",
+      "Traction chain - Check tension and alignment, grease manually, 5 millimetres equally tighten.",
+      "Remove sand and gravel particles",
+      "Clean, and derust. Replace bolts and nuts if necessary. Check filter mesh, sprayers, solids scraper, cleaning rakes and filter panel"
+    ]
+  },
+  {
+    "Service No": "ME05.06",
+    "Basic Inspection": [
+      "Check condition of plastic wheels and closing plates"
+    ]
+  },
+  {
+    "Service No": "ME05.12",
+    "Intermediate Servicing": [
+      "Check condition of filter screen and clean with pressurised water jet",
+      "Check and refill gearmotor oil"
+    ]
+  },
+  {
+    "Service No": "ME05.03",
+    "Basic Servicing": [
+      "Check bolted connections are tight",
+      "Check combing of rake in bar screen is non-contract; and distance of cromb to apron is about 2 - 3 mm",
+      "Check function of wiping devices work - no remains & moves back easily",
+      "Grease wire rope; slack rope device; pivoting gear drive pulley and shaft;",
+      "Check oil level in gear drive, refill if necessary",
+      "Visual check rope for breaks or twists"
+    ]
+  },
+  {
+    "Service No": "ME05.12",
+    "Intermediate Servicing": [
+      "Check rollers of rope tension device",
+      "Check carriage rollers for wear",
+      "Replace grease at flange bearings and spindle gears"
+    ]
+  },
+  {
+    "Service No": "ME05.03",
+    "Basic Servicing": [
+      "Check mesh panel frames and chain. Ensure bolted connections are tight",
+      "Visual check spray pattern of nozzles. Ensure spray pattern is even and mesh panels clean",
+      "Check that the trough & wash water channel is flowing evenly",
+      "Check oil level in gear drive, refill if necessary"
+    ]
+  },
+  {
+    "Service No": "ME05.12",
+    "Intermediate Servicing": [
+      "Check chain tension, wear of sprocket teeth and chain rollers",
+      "Clean & change grease for drive shaft bearing, and non-surface-coated threaded spindle"
+    ]
+  },
+  {
+    "Service No": "ME06.06",
+    "Basic Inspection": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Main Equipment",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Pipes and Fittings",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Auxiliary Valves",
+      "Check for faulty gauges, to replace if necessary"
+    ]
+  },
+  {
+    "Service No": "ME06.06",
+    "Tighten any loose bolts and nuts. Replace rusty bolts and nuts": [
+      "Clean air filter, if applicable",
+      "Check and Top-up oil (if using synthetic oil)",
+      "Change oil (if using mineral oil)",
+      "Check drive belt. Change or retension as necessary.",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "ME06.12",
+    "Basic Servicing": [
+      "Replace Oil (if using synthetic oil)",
+      "Visual check shaft seal, tighten if necessary",
+      "Regrease bearings",
+      "Replace air filter",
+      "check blow-off valve",
+      "check all screwed electrical connections and tighten if necessary",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "MA06.36",
+    "Advanced Servicing": [
+      "replace belts and/or pulleys",
+      "overhaul blower",
+      "Replace bearings, sealing spacers, shaft sleeve, seal ring, gasket set, compensation ring set, oil drain plugs and oil level plugs if applicable",
+      "replace shaft seal",
+      "replace oil lip seal",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "ME06.03",
+    "Basic Inspection": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Main Equipment",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Pipes and Fittings",
+      "Check for unusual noise level and vibration",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Pipes and Fittings",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Auxiliary Valves",
+      "Check for faulty gauges, to replace if necessary",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts",
+      "Clean air filter and suction silencer, if applicable",
+      "Check and refill gear oil (up to level gauge center) if required",
+      "Check tension and alignment of V belt",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "ME06.12",
+    "Intermediate Servicing": [
+      "Replace Oil",
+      "Replace air intake filters",
+      "Regrease bearings",
+      "Test run equipment before handing over to Ops"
+    ]
+  },
+  {
+    "Service No": "MA06.36",
+    "Advanced Servicing": [
+      "Replace bearings",
+      "Replace gaskets and seals",
+      "Check or replace gears",
+      "Replace V-Belt"
+    ]
+  },
+  {
+    "Service No": "ME06.01",
+    "Basic Inspection": [
+      "Check intake filters, filter bags and filter elements for contamination"
+    ]
+  },
+  {
+    "Service No": "ME06.06",
+    "Basic Servicing": [
+      "Change intake filters, filter bags and filter elements"
+    ]
+  },
+  {
+    "Service No": "ME06.12",
+    "Intermediate Servicing": [
+      "Visual inspection of cooling air flows for leaks",
+      "Clean the intake and exhaust air covers and exhaust outlets:",
+      "i) Switch cabinet’s inlet air cover,",
+      "ii) Intake opening’s inlet air cover,",
+      "iii) Switch cabinet’s rear cover,",
+      "iv) Start-up relief device’s (BOV) exhaust outlet,",
+      "v) Cooling system’s exhaust air outlet",
+      "Visual inspection and measurement of the conveying system’s frequency converter",
+      "Visual inspection and measurement of the cooling air system frequency converter",
+      "Measurement of various electrical components",
+      "Measurement of the conveying system motor",
+      "Measurement of the cooling air system motor",
+      "Control unit function test",
+      "Function test of controls and displays"
+    ]
+  },
+  {
+    "Service No": "MA06.60",
+    "Advanced Servicing": [
+      "Check the components of the conveying system’s frequency converter for wear and replace if necessary",
+      "Check the cooling air system frequency converter’s components for wear and replace if necessary",
+      "Check the control unit’s components for wear and replace if necessary"
+    ]
+  },
+  {
+    "Service No": "MA06.60",
+    "Check and repair the conveying system’s motor": [
+      "Check and repair the cooling air system motor"
+    ]
+  },
+  {
+    "Service No": "MA06.120",
+    "Advanced Servicing": [
+      "Replace worn components of the conveying system’s frequency converter",
+      "Replace the cooling air system frequency converter’s worn components",
+      "Replace the control unit’s worn components"
+    ]
+  },
+  {
+    "Service No": "ME06.01",
+    "Basic Servicing": [
+      "Check for unusual vibration and noise",
+      "Check the operations of auxliliary equipment and/or alarms",
+      "Check for oil leaks",
+      "Clean air breather",
+      "Check tightness of foundation bolts",
+      "Clean or replace air filter element.",
+      "Check condition of oil and change, if necessary",
+      "Check oil level and refill if necessary",
+      "Check the oil temperature and pressure against previoulsy established norms."
+    ]
+  },
+  {
+    "Service No": "ME06.06",
+    "Intermediate Servicing": [
+      "Check for abnormal gear tooth wear",
+      "Check coupling alignment"
+    ]
+  },
+  {
+    "Service No": "MA06.12",
+    "Advanced Servicing": [
+      "Check heat exchanger/air cooler for erosion, corrosion, or foreign material",
+      "Disconnect heat exchanger/air cooler and flush using water. To clean and dry the air cooler before connecting air cooler back to system",
+      "Perform laser alignment check for blower, gearbox and motor",
+      "Replace oil filter",
+      "Check gear tooth contact pattern."
+    ]
+  },
+  {
+    "Service No": "ME06.06",
+    "Basic Inspection": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Main Equipment",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Pipes and Fittings",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Auxiliary Valves",
+      "Check for faulty gauges, to replace if necessary",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts",
+      "Clean air filter, if applicable",
+      "Check and Top-up oil",
+      "Check drive belt. Change or retension as necessary.",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "ME06.12",
+    "Basic Servicing": [
+      "Replace Oil",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "ME06.24",
+    "Intermediate Servicing": [
+      "Replace air intake filters, (if applicable)",
+      "Clean oil cooler (if applicable)",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "ME07.03",
+    "Basic Inspection": [
+      "Check and clean the air filter element and air intake filters. Replace if required",
+      "Clean finned surface of air-oil or water-air cooler. Rectify faults or replace faulty coolers",
+      "Check drive belts. Change belt or re-tension belt as necessary. (if applicable)",
+      "Check functionality of auto drain valves, to rectify if faulty",
+      "Clean filter of the inline filter elements",
+      "Check cut-in/ cut-out air pressure. Adjust if necessary",
+      "Check for faulty pressure gauges; replace faulty gauges",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts"
+    ]
+  },
+  {
+    "Service No": "ME07.06",
+    "Basic Servicing": [
+      "Clean the enclosure filter and panels, if available",
+      "Check oil level and top up oil, if available",
+      "Clean & flush air/oil cooler block, if available",
+      "Check oil/air cooler for leaks, if available",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "MA07.12",
+    "Advanced Servicing": [
+      "Replace air filters element/ cartridge, including inline filter elements downstream of air compressor",
+      "Replace oil/air separator element/ cartridge, if available",
+      "Replace oil filters/ cartridge, if available",
+      "Replace V-belts, if available",
+      "Replace oil stop valve kit, if available",
+      "Replace drain valve kit, if available",
+      "Change compressor oil, if available"
+    ]
+  },
+  {
+    "Service No": "MA07.12",
+    "\"Check condition of cooling fan assy (AC)": [
+      "Check all pipings, tubings and joints for leakages and tighten",
+      "Check all the flexible hoses, replaced if found cracked or leaking",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "MA07.24",
+    "Advanced Servicing": [
+      "Replace unloading valve kit, if available",
+      "Replace check valve kit, if available",
+      "Replace min pressure valve kit, if available",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "ME07.03",
+    "Basic Inspection": [
+      "Check and clean the air intake filters, if available. Replace if required",
+      "Check and clean intake wire net, if available. Replace if required",
+      "Check cut-in/ cut-out air pressure. Adjust if necessary",
+      "Check for faulty pressure gauges; replace faulty gauges",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "MA07.12",
+    "Advanced Servicing": [
+      "Replace air intake filters element/ cartridge including inline filter elements downstream of air compressor",
+      "Check all pipings, tubings and joints for leakages and tighten",
+      "Check all the flexible hoses and nylon pipe, replaced if found cracked or leaking",
+      "Check drive belts. Change belt or re-tension belt as necessary. (if applicable)",
+      "Check magnetic switch. Replace if required",
+      "Check motor resistance",
+      "Check all bearings. Replace if required.",
+      "Replace all tip seals and face seal, if available.",
+      "Check and Clean Fan, orbiting or fixed scroll fins, scoll bearing, if available. Replace if required",
+      "Inspect for leaks check valve, relief valve, drain valve, electromagnetic switch, v-belts, rubber hose, if available. Replace if required.",
+      "Inspect Vibration isolating rubbers for any damage or hardness",
+      "Check electric motor and pressure sensor",
+      "Check and clean after cooler. Replace if required.",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "MA07.24",
+    "Advanced Servicing": []
+  },
+  {
+    "Service No": "ME07.24",
+    "\"Replace V-belts": [
+      "Replace intake rubber hose and nylon pipe, if available",
+      "Replace magneitc switch, if available",
+      "check pullies, if available",
+      "check thermal and pressure sensor, if available",
+      "Replace all o-rings, if available",
+      "Replace check valves, if available",
+      "Grease air end seal, if available",
+      "Check and clean air end fan",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "MA07.48",
+    "Advanced Servicing": [
+      "Replace motor bearings",
+      "Replace air end bearings",
+      "Replace After Cooler, if required",
+      "Replace compressor head, if required",
+      "Replace ventilating fan, vibration isolating rubbers",
+      "Test run equipment before handing over to Ops"
+    ]
+  },
+  {
+    "Service No": "ME07.06",
+    "Basic Inspection": [
+      "Clean the enclosure filter and panels, if available",
+      "Check the oil and air coolers for leaks, if available",
+      "Check oil level and top up oil, if available",
+      "Check condition and clean the air intake filters",
+      "Check drive belts. Change belt or re-tension belt as necessary. (if applicable)",
+      "Check condition of pilot air filter element (if available) and clean or replace as required.",
+      "Clean finned surface of air-oil or water-air cooler. Rectify faults or replace faulty coolers",
+      "Check cut-in/ cut-out air pressure. Adjust if necessary",
+      "Check for faulty pressure gauges; replace faulty gauges",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "MA07.12",
+    "Advanced Servicing": [
+      "Replace air filters element/ cartridge, including inline filter elements downstream of air compressor",
+      "Replace oil/air separator element/ cartridge, if available",
+      "Replace oil filters/ cartridge, if available",
+      "Change compressor oil, if available",
+      "Check oil/air cooler for leaks, if available",
+      "Check all pipings, tubings and joints for leakages and tighten",
+      "Check all the flexible hoses, replaced if found cracked or leaking"
+    ]
+  },
+  {
+    "Service No": "MA07.12",
+    "\"Test run equipment before handing over to Ops": []
+  },
+  {
+    "Service No": "ME08.06",
+    "Basic Servicing": [
+      "Clean belt and sensors",
+      "Check and tighten tie rod, bolts and nuts, tension of Belt.",
+      "Check gearbox condition and grease",
+      "Check and tighten the pull cord if necessary and its functionality",
+      "Grease conveyor bearings",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "ME08.03",
+    "Basic Servicing": [
+      "Check and clean the outlet flange and screws for any accumulation.",
+      "Check for leaks between seals and bearings, and at conveyor flange unions"
+    ]
+  },
+  {
+    "Service No": "ME08.06",
+    "Intermediate Servicing": [
+      "Grease inlet and outlet sides of labyrinth seals, if fitted",
+      "Check and top up gearbox oil level",
+      "Visually inspect screw for wear"
+    ]
+  },
+  {
+    "Service No": "ME08.03",
+    "Basic Inspection": [
+      "Check for any unusual vibration or noise. Locate and rectify",
+      "Check screws/blades, liner for wear. Replace damaged liner section",
+      "Record bellhousing packing temperature. Regrease if > 60degC",
+      "Check conveyor spirals for excessive wear or unusual damage, clean spirals",
+      "Carry out derusting if rust is present and paint affected spots",
+      "Check gland packing box for leaks. Re-tighten if necessary"
+    ]
+  },
+  {
+    "Service No": "ME08.06",
+    "Intermediate Inspection": [
+      "Check/tighten all nuts and bolts",
+      "Flush conveyor with water and clean conveyor",
+      "Check for visual damage"
+    ]
+  },
+  {
+    "Service No": "ME08.12",
+    "Basic Servicing": [
+      "Change oil in drive units and gear reducers, top up if necessary",
+      "Change wear parts of stuffing box, if necessary",
+      "Check and service/top-up the coolant/lubricant for all the Conveyor Drives",
+      "Lubricate gearbox"
+    ]
+  },
+  {
+    "Service No": "ME08.24",
+    "Intermediate Servicing": [
+      "Check all fasteners (supports, trough connection etc)",
+      "Check all trough welds",
+      "Check the oil level in the gearbox and its colour. If the oil is heavily emulsified (cream-like), replace.",
+      "Lubricate Bell Housing Gland Packing using grease gun"
+    ]
+  },
+  {
+    "Service No": "ME08.03",
+    "Basic Servicing": [
+      "Check the noise level and temperature of gearbox",
+      "Check and clean inlet and outlet chutes",
+      "Check shaft seals, and seals of flanged end bearing assembly and gear end reducer for leaks",
+      "Check and tighten bolts and nuts",
+      "Lubricate end bearing and chain drive transmission, if applicable",
+      "Check tensioning of chain transmission, re-tension if necessary",
+      "Check screws/blades, liner for wear. Replace damaged liner section",
+      "Check and top up gear oil",
+      "Check and re-fill grease",
+      "Check screw feeder suction cloth or expandable hose connection (if available). To change if found loose or leaking"
+    ]
+  },
+  {
+    "Service No": "ME08.12",
+    "Intermediate Servicing": [
+      "Change gearbox oil. Change oil seal if leaking.",
+      "Lubricate flexible couplings",
+      "Replace shaft seals of the end bearings and intermediate bearings, if required"
+    ]
+  },
+  {
+    "Service No": "ME08.03",
+    "Basic Servicing": [
+      "Grease end bearing",
+      "Clear outlet and hanger bearing of crust"
+    ]
+  },
+  {
+    "Service No": "ME08.24",
+    "Intermediate Servicing": [
+      "Replace end bearing grease",
+      "Replace seals and hanging bearings"
+    ]
+  },
+  {
+    "Service No": "ME08.06",
+    "Basic Servicing": [
+      "Check feed pressure; sealing , conveyor / system; pressure drop during conveying; pressure drop during idling",
+      "Clean the conveyor"
+    ]
+  },
+  {
+    "Service No": "ME08.12",
+    "Intermediate Servicing": [
+      "Change filter kit of the filter regulator"
+    ]
+  },
+  {
+    "Service No": "ME14.06",
+    "Basic Inspection": [
+      "Check for air leaks",
+      "Check for damaged wiring or loose connections"
+    ]
+  },
+  {
+    "Service No": "ME14.12",
+    "Basic servicing": [
+      "Replace inlet filter cartridge",
+      "Replace the silencers"
+    ]
+  },
+  {
+    "Service No": "ME14.24",
+    "Intermediate Servicing": []
+  },
+  {
+    "Service No": "ME14.24",
+    "Replace dessicant cartridges": []
+  },
+  {
+    "Service No": "MA14.48",
+    "Advanced Servicing": [
+      "Replace exhaust valve diphragm and solenoid valves",
+      "Replace shuttle valve and o rings"
+    ]
+  },
+  {
+    "Service No": "ME14.06",
+    "Basic Inspection": [
+      "Check for air leaks",
+      "Check for damaged wiring or loose connections",
+      "Replace inlet and outlet filter cartridges"
+    ]
+  },
+  {
+    "Service No": "ME14.12",
+    "Basic servicing": [
+      "Service Plan A",
+      "Calibrate pressurised dew point (pdp) sensor"
+    ]
+  },
+  {
+    "Service No": "ME14.03",
+    "Basic servicing": [
+      "Clean dryer surface",
+      "Check and record Dew point pressure",
+      "Brush and blow off finned surface of condenser"
+    ]
+  },
+  {
+    "Service No": "ME14.03",
+    "Basic servicing": [
+      "Inspect and clean inner components of condensate trap"
+    ]
+  },
+  {
+    "Service No": "ME14.06",
+    "Intermediate Servicing": [
+      "Check operating pressure, temperature and time settings",
+      "Clean dryer surface",
+      "Brush and blow off finned surface of condenser"
+    ]
+  },
+  {
+    "Service No": "ME14.12",
+    "Basic servicing": [
+      "Replace muffler, element in fine filter muffler",
+      "Replace dew point sensor, if necessary",
+      "Replace pilot valves"
+    ]
+  },
+  {
+    "Service No": "ME14.24",
+    "Intermediate Servicing": [
+      "Replace inlet valves, check valves, expansion valves, solenoid coils"
+    ]
+  },
+  {
+    "Service No": "MA14.48",
+    "Advanced Servicing": [
+      "Replace drying agent",
+      "Check condition of fittings including gaskets, replace if necessary"
+    ]
+  },
+  {
+    "Service No": "ME14.03",
+    "Basic Servicing": [
+      "Check function of condensate drain",
+      "Clean refrigerant condenser",
+      "Inspect condensate draining system, clean if necessary"
+    ]
+  },
+  {
+    "Service No": "MA14.12",
+    "Advanced Servicing": [
+      "Replace condensate drain",
+      "Replace in-line filters downstream of dryer",
+      "Replace filters cartridge - reset LED \"\"Filter Maintenance\"\" or timer of filter maintenance"
+    ]
+  },
+  {
+    "Service No": "MA14.36",
+    "Advanced Servicing": [
+      "Inspect dessicant and replace if necessary"
+    ]
+  },
+  {
+    "Service No": "ME14.12",
+    "Basic servicing": [
+      "Replace filter elements (pre and after filters)"
+    ]
+  },
+  {
+    "Service No": "ME14.24",
+    "Intermediate Servicing": [
+      "Replace dessicant cartridges"
+    ]
+  },
+  {
+    "Service No": "ME14.12",
+    "Basic servicing": [
+      "Replace the filter cartridges",
+      "Replace the purge mufflers",
+      "Replace or service condensate drain"
+    ]
+  },
+  {
+    "Service No": "ME14.03",
+    "Basic servicing": [
+      "Check condensate drainage",
+      "Clean refrigerant condenser",
+      "Replace purge mufflers",
+      "Replace or service condensate drain"
+    ]
+  },
+  {
+    "Service No": "MA14.12",
+    "Advanced Servicing": [
+      "Check refrigerant circuit (by authorised service tech)",
+      "Check safety pressure switch (by authorised service tech)"
+    ]
+  },
+  {
+    "Service No": "ME14.06",
+    "Basic servicing": [
+      "Replace pre-filter and post-filter elements and/or cartridges. Replace cartridges if pre-filter and post-filter differential pressure are outside operating limits."
+    ]
+  },
+  {
+    "Service No": "ME14.24",
+    "Intermediate Servicing": [
+      "Replace diaphragm and seal kits on purge and switching diaphragm valves."
+    ]
+  },
+  {
+    "Service No": "ME14.03",
+    "Basic Inspection": [
+      "Check pressure gauges for back pressure during purging",
+      "Check drain operation"
+    ]
+  },
+  {
+    "Service No": "ME14.06",
+    "Basic servicing": [
+      "Check for cyclic operation"
+    ]
+  },
+  {
+    "Service No": "ME14.18",
+    "Intermediate Servicing": [
+      "Replace active exhaust silencers",
+      "Replace inlet, outlet and control air filters",
+      "Service drains"
+    ]
+  },
+  {
+    "Service No": "ME14.30",
+    "Intermediate Servicing II": [
+      "Replace valve seats and seals"
+    ]
+  },
+  {
+    "Service No": "ME14.30",
+    "Replace desiccant": []
+  },
+  {
+    "Service No": "ME15.06",
+    "Basic Servicing": [
+      "Remove ejector and clear any scaling"
+    ]
+  },
+  {
+    "Service No": "MA15.24",
+    "Advanced Servicing": [
+      "Replace O-rings and diaphragm/ball check valve",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "ME16.03",
+    "Basic Inspection": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Main Equipment",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Pipes and Fittings",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Auxiliary Valves",
+      "Check for signs of leaks, cracks, damages on Strainers (if available); to clean internal of strainer if required",
+      "Check for faulty pressure gauges (if available); replace faulty gauges",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts",
+      "Visual inspect level float for calcium build up, clean and clear scaling",
+      "Visual inspect and clean both the water inlet filter and brine inlet filter."
+    ]
+  },
+  {
+    "Service No": "ME18.01",
+    "Basic Servicing": [
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts.",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Energy Recovery System",
+      "Check LinX valve oil collection drains. Repair seals if leak is present.",
+      "Check LinX Valve Limit Switches and Energy Recovery Vessel limit switch. Adjust if necessary.",
+      "Record condition monitoring parameters (e.g. gear pump discharge pressure)",
+      "Wash down structural supports and vessels with fresh water to remove salt deposits"
+    ]
+  },
+  {
+    "Service No": "MA18.12",
+    "Advanced Servicing": [
+      "Check ER Vessel Piston Flapper. Repair if ER Vessel Piston flapper is damaged.",
+      "Check alignment of each layer according to OEM manual using a digital levelling gauge during installation",
+      "Check for minor cracks on mating flange surfacees using penetrant test. Perform repair (metal build etc) as necessary.",
+      "Check concrete supports for cracks, repair if necessary",
+      "Replace all oil seals and spring as necessary."
+    ]
+  },
+  {
+    "Service No": "ME19.01",
+    "Basic Servicing": [
+      "Check, clean and change if necessary and applicable"
+    ]
+  },
+  {
+    "Service No": "ME19.01",
+    "Basic Servicing": [
+      "Check and clean filter",
+      "Inspect cartridges spring condition, if applicable. Replace if necessary"
+    ]
+  },
+  {
+    "Service No": "ME19.06",
+    "Intermediate Servicing": [
+      "Replace Cartridge"
+    ]
+  },
+  {
+    "Service No": "ME19.12",
+    "Basic Servicing": [
+      "Replace all consumable parts such as O-rings and gaskets",
+      "Replace gas filter element",
+      "Normalise gas line and check for any leaks, rectify if any."
+    ]
+  },
+  {
+    "Service No": "MA19.12I",
+    "Advanced Inspection": [
+      "Inspect the filter visually for proper operation; any leakage from the housing or accessories; loosen bolts; abnormal or unusual noises; unusual vibrations;",
+      "Inspect the filter air release valves and drainage ball valves for any passing.",
+      "Disassemble the filter’s covers and inspect the filter internal components and seal for any wear and tear;",
+      "Check the filter housing and cover for any sign of mechanical damage. Replace any damaged components.",
+      "Remove barnacles or foreign particles and replace any broken disc, if found."
+    ]
+  },
+  {
+    "Service No": "MA19.12S",
+    "Advanced Servicing": [
+      "Check for tightness of each spines using a torque wrench and special wrench (760109-000080), set to 70Nm.",
+      "Check for tightness of each butterfly nut using a torque wrench and special wrench (760109-000060), set to 10Nm"
+    ]
+  },
+  {
+    "Service No": "ME20.03",
+    "Intermediate Servicing": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Main Equipment",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Pipes and Fittings",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Auxiliary Valves",
+      "Check for faulty gauges, to replace if necessary",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts",
+      "Grease/lubricate shifter conveyor",
+      "Grease/lubricate shifter conveyor chain and chain flange bearing",
+      "Grease/lubricate clothwasher carriage drive chains"
+    ]
+  },
+  {
+    "Service No": "ME20.03",
+    "Grease/lubricate clothwasher wash head drive chains": [
+      "Grease/lubricate clothshaker rack and pinions, (if available)",
+      "Grease/lubricate clothshaker drive chain (if available)",
+      "Grease/lubricate filter plate hangar rollers and rails",
+      "Inspect visually all filter press plates and membranes for air leak and replace any defective rubber membranes",
+      "Examine the structural assembly for signs of damage/wear.",
+      "Check Shifter Drive assembly movement",
+      "Check Clothwash machine and head movement",
+      "Visually inspect seal leakage of hydraulic cylinder (including press open/close cylinders,",
+      "drip flap open/close cylinders)",
+      "Carry out derusting if rust is present on asset and paint affected spots"
+    ]
+  },
+  {
+    "Service No": "MA20.24",
+    "Advanced Servicing": [
+      "Check chain and sprockets for wear and tear",
+      "Check condition of carriage assembly and movement of rollers",
+      "Replace all filter cloths for all filter plates unless otherwise instructed",
+      "Replace all air tubings"
+    ]
+  },
+  {
+    "Service No": "MA20.60",
+    "Advanced Servicing": [
+      "Overhaul hydraulic cylinder"
+    ]
+  },
+  {
+    "Service No": "ME21.03",
+    "Basic Inspection": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Main Equipment",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Pipes and Fittings",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Auxiliary Valves",
+      "Rectify leaks in hydraulic hose, if applicable",
+      "Clean surfaces of HPUs",
+      "Clean fan and fan guard of HPU motor of all dust and debris",
+      "Check for faulty gauges, to replace if necessary",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts",
+      "Check operating temperature of hydraulic system",
+      "Check that operating pressure of hydraulic system can attain design pressure",
+      "Check and record hydraulic fluid level and colour",
+      "Check accumulator for proper pre-charged pressure and oil"
+    ]
+  },
+  {
+    "Service No": "ME21.06",
+    "Basic Servicing": [
+      "Top up hydraulic oil, if applicable.",
+      "Check accumulator pressure, recharge if required",
+      "Check and replace worn out or leaking flexible hydraulic hoses and rubber air hoses",
+      "(connected to plate shifter, cloth shaker, cloth wash machine, filter press membranes)"
+    ]
+  },
+  {
+    "Service No": "ME21.24",
+    "Intermediate Servicing": [
+      "Change HPU oil, replace oil filters and air breather gel"
+    ]
+  },
+  {
+    "Service No": "MA21.60",
+    "Advanced Servicing": [
+      "Overhaul hydraulic power pack"
+    ]
+  },
+  {
+    "Service No": "ME22.12",
+    "Basic Inspection": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Main Equipment",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts",
+      "Check and top up oil/ grease of gearbox if required",
+      "Lubricate valve spindle, if required and drive nuts,"
+    ]
+  },
+  {
+    "Service No": "ME22.48",
+    "Basic Servicing": [
+      "Change gearbox oil. Change oil seal if leaking.",
+      "Remove old grease and re-apply new heavy-duty grease for grease lubricated gearbox"
+    ]
+  },
+  {
+    "Service No": "ME22.06",
+    "Basic Inspection": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Main Equipment",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts",
+      "Check and top up oil/ grease of gearbox if required",
+      "Check motor-gearbox coupling; tighten bolts & nuts, if required"
+    ]
+  },
+  {
+    "Service No": "ME22.24",
+    "Basic Servicing": [
+      "Change gearbox oil. Change oil seal if leaking.",
+      "Remove old grease and re-apply new heavy-duty grease for grease lubricated gearbox",
+      "Test run equipment before handing over to Ops"
+    ]
+  },
+  {
+    "Service No": "ME23.03",
+    "Basic Inspection": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Main Equipment and Vaporiser",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Pipes and Fittings",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Auxiliary Valves",
+      "Check for signs of damaged pipe insulation, to replace or recondition if required",
+      "Tighten any loose bolts and nuts. To replace or re-condition rusty bolts and nuts"
+    ]
+  },
+  {
+    "Service No": "ME23.03",
+    "Check for faulty pressure gauges; replace faulty gauges": []
+  },
+  {
+    "Service No": "ME23.12",
+    "Basic Servicing": [
+      "Visual inspection of the tank from ground level, include removing of algae and repainting of vessel if required.",
+      "Visual inspection of Evacuation ports, vacuum gauge valves and related valves where applicable",
+      "Visual inspection from ground level of Jacket Relief Device (for outer jacket) or safety device (or outer vessel), where applicable",
+      "Visual inspection of Pressure gauge and Level gauge",
+      "To check for leak (pressure leak check) on tank piping, pressure builder, vaporiser and related valves (where applicable) and rectify if necessary",
+      "Perform functional check and check for leaks on the Diverting Valve or Flow Divertor Valve",
+      "To check for leaks on the Back Pressure Regulator and any other related pressure regulators, where applicable",
+      "Replace gas feed filter cartridge",
+      "Inspect the Rupture Discs for the inner vessel, replace if faulty."
+    ]
+  },
+  {
+    "Service No": "MA23.24",
+    "Advanced Servicing": [
+      "To replace inner vessel safety valves, to be provided by Contractor",
+      "Inspection and functional testing of all PRVs, inclusive of PRVs along the O2/CO2 pipeline. Replace PRV if required, including the test certificate to the required setting pressure.",
+      "Check LOX/CO2 tank, pressure builder, vaporiser, valves and connections for leaks and malfunctions – bubble leak tests to be performed by ASNT Level II personnel.",
+      "Check LOX/CO2 storage tank vacuum reading. Pump and reinstate the vacuum within the acceptable range if required.",
+      "To open and replace valve seat for Upper Filling Valve and Lower Filling Valve. Check for leaks on the valves. Valve seats to be provided by Contractor",
+      "To replace the Rupture Discs for the inner vessel. Rupture discs to be provided by the Contractor"
+    ]
+  },
+  {
+    "Service No": "MA23.36",
+    "Advanced Servicing": [
+      "Perform pressure leak check and visual check on thermal safety valves, if applicable"
+    ]
+  },
+  {
+    "Service No": "ME24.01",
+    "Basic Servicing": [
+      "Perform bubble test"
+    ]
+  },
+  {
+    "Service No": "ME24.01",
+    "Basic Servicing": [
+      "Perform bubble test"
+    ]
+  },
+  {
+    "Service No": "MA24.06",
+    "Advanced Servicing": [
+      "Inspect pipe connections and end closure assemblies for leakage and rectify if necessary",
+      "Clean and remove any salt and/or corrosion deposits",
+      "Inspect end closure components for deterioration and replace as needed",
+      "Inspect coupling connections at side ports for corrosion/leakage and replace deteriorated couplings or gasket as needed"
+    ]
+  },
+  {
+    "Service No": "MA25.48",
+    "Advanced Servicing": [
+      "Drain Ozone Reaction Tank and Visually Inspect all diffusers of ozone contact chambers",
+      "Clean diffuser disc to remove chokage",
+      "Replace damaged diffuser disc"
+    ]
+  },
+  {
+    "Service No": "ME26.12",
+    "Basic Servicing": [
+      "Check exposed penstock components for corroded or worn out parts. Touch up with new paint",
+      "where applicable",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts",
+      "Clean transparent/ clear spindle cover (if available), to replace if clear cover becomes opaque",
+      "To apply grease (foodgrade type - where required) to the penstock stem and any contact/sliding surfaces (if applicable)",
+      "Operate penstock manually, check visually if penstock is leaking through when it is fully closed. Replace penstock seal if necessary."
+    ]
+  },
+  {
+    "Service No": "ME27.03",
+    "Basic Inspection": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Main Equipment",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Pipes and Fittings",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Auxiliary Valves",
+      "Check for signs of leaks, cracks, damages on Strainers (if available); to clean internal of strainer if required",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts",
+      "Check for faulty pressure gauges; replace faulty gauges",
+      "Check condition of belts, to replace if necessary"
+    ]
+  },
+  {
+    "Service No": "ME27.03",
+    "Basic Servicing": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Main Equipment",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Pipes and Fittings",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Auxiliary Valves"
+    ]
+  },
+  {
+    "Service No": "ME27.03",
+    "\"Check for signs of leaks": [
+      "Check for faulty pressure gauges (if available); replace faulty gauges",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts",
+      "Clean hopper loader",
+      "Clean filter element and compensating filter. Replace if necessary",
+      "Visual inspect and clean powder screw feeder and washing-in eqpt",
+      "Visual inspect the solenoid valve, clean if necessary",
+      "Clean filter insert in the Pressure Reducing Valve",
+      "Check turbine wheel inside water meter is running frequently. Clean if necessary"
+    ]
+  },
+  {
+    "Service No": "ME28.06",
+    "Basic Servicing": [
+      "Visually inspect and clean pneumatic actuator",
+      "Check for compressed air leaks using liquid leak detector/soapy water/ultrasonic camera",
+      "Operate pneumatic actuator, record opening/closing time."
+    ]
+  },
+  {
+    "Service No": "ME28.24",
+    "Intermediate Servicing": [
+      "Replace o-rings of pneumatic actuator"
+    ]
+  },
+  {
+    "Service No": "ME45.00",
+    "Basic Inspection": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Main Equipment",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Pipes and Fittings",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Auxiliary Valves",
+      "Check for signs of leaks, cracks, damages on Strainers (if available); to clean internal of strainer if required",
+      "Check for faulty pressure gauges (if available); replace faulty gauges",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts"
+    ]
+  },
+  {
+    "Service No": "ME50.06",
+    "Basic Servicing": [
+      "Visual check the mixer for physical damages, rectify if necessary",
+      "Turn the propeller and visual check for physical damages on mixer blades & sign of bearing damage,",
+      "rectify if necessary",
+      "Dismantle the propeller and clear any sludge in the propeller dome",
+      "Check oil condition in mixer oil chamber, replace with new mechanical seal if oil is milky or contaminated.",
+      "Visual check guard rail rollers for damages, replace rollers if necessary",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "MA50.24",
+    "Advanced Servicing": [
+      "Replace all consumable parts such as o-rings, bearings, mechanical seals and etc.",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "ME55.12",
+    "Basic Servicing": [
+      "Check for leaks, rectify any leaks along the pipes and at joints",
+      "Manually flush line using service water/hydrant if applicable",
+      "Dismantle injection point, remove scaling from pipes/ lances and fittings either by wire brushing or soaking"
+    ]
+  },
+  {
+    "Service No": "ME59.06",
+    "Basic Inspection": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Main Equipment",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Pipes and Fittings",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Auxiliary Valves",
+      "Check for signs of leaks, cracks, damages on Strainers (if available); to clean internal of strainer if required",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts",
+      "Check and top up oil/ grease of gearbox if required and if available",
+      "Check for faulty temperature and/or pressure gauges (if available); replace faulty gauges",
+      "Grease pump bearing or top up lubrication oil level whichever is required. Only if applicable to the type of pump",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "MP59.06",
+    "Predictive Maintenance": []
+  },
+  {
+    "Service No": "MP59.06",
+    "\"Record vibration": [
+      "(at least once every 6 months)"
+    ]
+  },
+  {
+    "Service No": "ME60.01",
+    "Basic Servicing": ["Tighten any loose bolts and nuts. Replace rusty bolts and nuts"]
+  },
+  {
+    "Service No": "ME60.03",
+    "\"Check for signs of leaks": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Pipes and Fittings",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Auxiliary Valves",
+      "Check for signs of leaks, cracks, damages on Strainers (if available); to clean internal of strainer"
+    ]
+  },  
+  {
+    "Service No": "ME60.03",
+    "\"Check for faulty pressure gauges; replace faulty gauges": [
+      "Check Pulsation dampener for abnormalities such as zero pressure, to rectify if necessary",
+      "Check and top up hydraulic oil and/or gear oil if required and if available",
+      "Dismantle pump suction & discharge check valves; clean & check valve seats, replace gaskets",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "MA60.24",
+    "Advanced Servicing": [
+      "Replace connecting hoses,(if available), diaphragm of loading valves & seat/ball or disc of check valves",
+      "Replace suction and discharge check valve of the diaphragm pump",
+      "Replace diaphragm of pump",
+      "Drain & change hydraulic and/or gear oil, if applicable",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "ME61.03",
+    "Basic Inspection": [
+      "",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Main Equipment",
+      "",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Pipes and Fittings",
+      "",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Auxiliary Valves",
+      "",
+      "Check for signs of leaks, cracks, damages on Strainers (if available); to clean internal of strainer",
+      "",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts",
+      "",
+      "Test run equipment before handing over to Ops, if any parts replaced",
+      ""
+    ]
+  },
+  {
+    "Service No": "ME61.24",
+    "Basic Servicing": [
+      "",
+      "Disassemble fluid section & air motor section of pump for servicing",
+      "",
+      "Visual inspect diaphragm, balls, seats & o-rings for swelling, cracking or other damages. Replace if necessary.",
+      "",
+      "Clean & lubricate parts in pilot & main valve, if available",
+      "",
+      "Test run equipment before handing over to Ops",
+      ""
+    ]
+  },
+  {
+    "Service No": "ME62.03",
+    "Basic Inspection": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Main Equipment",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Pipes and Fittings",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Auxiliary Valves",
+      "Check for signs of leaks, cracks, damages on Strainers (if available); to clean internal of strainer",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts",
+      "Check for faulty pressure gauges; replace faulty/opaque cover gauges",
+      "Check for signs of leaks, cracks, damages on Strainers (if available); to clean internal of strainer if required",
+      "Check any sign of cavitation by looking at flowmeter. If the flowmeter actual flow is lesser than theoretical flow at the rated speed, cavitation might occur. Note and report for any abnormalities",
+      "Powerframe - check the oil level, top up if below 50%, half of the oil cup level. Investigate rootcause for leak and rectify",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "MA62.12",
+    "Advanced Inspection": [
+      "Inspect coupling, pump & motor bolting, check the alignment and is there any sign of loose",
+      "Inspect internal pump components as follows. Bearings, Shafts, Gears, Housing Liner. Pump dismantling is not required for alignment. For pump internal wet ends inspection, not required to dismantle the whole pump from system, but just open the head cover",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "MA62.24",
+    "Advanced Servicing": [
+      "Replace Pump End Spare parts (Kopkit): Liner Housing, Gears, O-ring Cover and bearing, by dismantling the front cover for replacment.",
+      "Drain and change lubricating oil for the Powerframe Shaft lubrication.",
+      "Calibrate using Flowmeter.",
+      "Carry out shaft alignment.",
+      "Test run equipment before handing over to Ops"
+    ]
+  },
+  {
+    "Service No": "ME63.03",
+    "Basic Inspection": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Main Equipment",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Pipes and Fittings",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Auxiliary Valves",
+      "Check for signs of leaks, cracks, damages on Strainers (if available); to clean internal of strainer",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts"
+    ]
+  },
+  {
+    "Service No": "ME63.03",
+    "\"Check Pulsation dampener for abnormalities such as zero pressure": [
+      "Check for faulty pressure gauges; replace faulty/opaque cover gauges",
+      "Check and top up hydraulic oil and/or gear oil if required",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts"
+    ]
+  },
+  {
+    "Service No": "ME63.12",
+    "Basic Servicing": [
+      "Replace pump hose, check pressing shoes condition and hose flange connection, replace if necessary",
+      "Change hose lubricant, replace oil seal/oil ring if necessary",
+      "Test run equipment before handing over to Ops"
+    ]
+  },
+  {
+    "Service No": "ME63.24",
+    "Intermediate Servicing": [
+      "Change gearbox oil, if applicable",
+      "Test run equipment before handing over to Ops, if gearbox oil changed"
+    ]
+  },
+  {
+    "Service No": "ME65.03",
+    "Basic Inspection": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Main Equipment",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Pipes and Fittings",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Auxiliary Valves",
+      "Check for signs of leaks, cracks, damages on Strainers (if available); to clean internal of strainer",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts",
+      "Check for faulty pressure gauges; replace faulty/opaque cover gauges",
+      "Top up lubricating oil, if applicable",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "ME65.12",
+    "Basic Servicing": [
+      "Change gear oil",
+      "Test run equipment before handing over to Ops"
+    ]
+  },
+  {
+    "Service No": "ME66.03",
+    "Basic Inspection": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Main Equipment"
+    ]
+  },
+  {
+    "Service No": "ME66.03",
+    "\"Check for signs of leaks": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Auxiliary Valves",
+      "Check for signs of leaks, cracks, damages on Strainers (if available); to clean internal of strainer",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts",
+      "Check for faulty pressure gauges; replace faulty/opaque cover gauges",
+      "Check and top up oil/ grease of gearbox if required and if available",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "ME66.12",
+    "Basic Servicing": []
+  },
+  {
+    "Service No": "ME66.24",
+    "Check Operating Performance (Pressure or flow) of pump. Replace stator if required.": [
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "ME67.12",
+    "Basic Servicing": [
+      "Check for signs of corrosion; rectify and touch up with new paint",
+      "Check clamps and jubilee clips (if available) for corrosion and damage. To replace if required",
+      "Check for leaks in valves and pipe system; rectify leaks, if applicable",
+      "Top up hydraulic oil, if applicable",
+      "Lift pump out of sump pit, inspect and clean."
+    ]
+  },
+  {
+    "Service No": "ME68.06",
+    "Basic Inspection": [
+      "Check level and colour of oil, top up if low or replace if milky",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on pump",
+      "Check and clean inlet & exhaust filters"
+    ]
+  },
+  {
+    "Service No": "ME69.06",
+    "Basic Servicing": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Main Equipment",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Pipe and Fittings",
+      "Check for signs of leaks, cracks, damages on and touch up with new paint (if applicable) for Auxiliary Valves",
+      "Replace Pre-Filter Element, if applicable",
+      "Replace Micro-Filter Element, if applicable"
+    ]
+  },
+  {
+    "Service No": "ME69.12",
+    "Intermediate Servicing": [
+      "Replace Ultra-Filter element, if applicable",
+      "Clean and Grease PSA process valves using Oxygenoex S4 or equivalent"
+    ]
+  },
+  {
+    "Service No": "MA69.60",
+    "Advanced Servicing": [
+      "Replace Molecular Sieve (if recommended by OEM)",
+      "Inspect Internals of process columns/ tanks (if recommended by OEM)",
+      "Replace top brass filters (if PSA system is on standby)",
+      "Replace process valves, if necessary (if PSA system is on standby)",
+      "Replace main inlet pressure regulator (if PSA system is on standby)"
+    ]
+  },
+  {
+    "Service No": "ME73.06",
+    "Basic Inspection": [
+      "Check for signs of air or lime leaks. Rectify any faults",
+      "Check condition of pneumatic tubing. Rectify any faults",
+      "Check and rectify faulty rubber bellow and springs, if applicable",
+      "Clean and check dust filter bag condition. Rectify any faults (including charger hopper, if any)",
+      "Operate silo hopper knife gate or isolation valve. Rectify any faults"
+    ]
+  },
+  {
+    "Service No": "ME73.12",
+    "Basic Servicing": [
+      "Replace dehumidifer and/or dust collector filters (if available)",
+      "Replace pneumatic tubings",
+      "Clean up silo top, and touch up corroded areas with new paint",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "MA73.24",
+    "Advanced Servicing": [
+      "Replace Flexible Blades of Arch Breaker Assembly, if applicable."
+    ]
+  },
+  {
+    "Service No": "ME74.03",
+    "Basic Inspection": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Main Equipment",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Pipes and Fittings",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts",
+      "Clean rotameter (if any); replace if necessary"
+    ]
+  },
+  {
+    "Service No": "MA74.36",
+    "Advanced Servicing": [
+      "Replace resin"
+    ]
+  },
+  {
+    "Service No": "ME75.06",
+    "Basic Inspection": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Main Equipment",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Pipes and Fittings",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Auxiliary Valves",
+      "Check for signs of leaks, cracks, damages on Strainers (if available); to clean internal of strainer if required",
+      "Check for faulty pressure gauges (if available); replace faulty gauges",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts",
+      "Remove screen for inspection and manual cleaning, replace O-ring",
+      "Inspect brushes for any wear and tear.",
+      "Check and replace hydraulic seals if required",
+      "Grease the brush assembly shaft"
+    ]
+  },
+  {
+    "Service No": "ME76.03",
+    "Basic Inspection": [
+      "Check and record air/water ratio, liquid level between the 2 markings on the sight glass",
+      "Visual inspect for signs of leaks and corrosion. Rectify and touch up with new paint if necessary",
+      "Check for faulty pressure gauges, to replace if necessary."
+    ]
+  },
+  {
+    "Service No": "ME80.12",
+    "Basic Servicing": [
+      "Clean manometer or sight glass where isolation valve is available",
+      "Clean Strainer, if any, replace if faulty",
+      "Check for signs of corrosion, clean and touch up with new paint on tanks and railings",
+      "For tank with dust collector - clean filter bag and filter nozzles, replace if necessary",
+      "For tank with dust collector - replace pneumatic tubings"
+    ]
+  },
+  {
+    "Service No": "MA80.12",
+    "Advanced Cleaning": []
+  },
+  {
+    "Service No": "MA80.04",
+    "Clear tank drainage. Rectify any chokes": []
+  },
+  {
+    "Service No": "MA80.36",
+    "Clear tank connecting pipes. Rectify any chokes or replace": [
+      "Flush internal of overflow pipe, tank connecting pipes, tank inlet and outlet pipes, all off-takes from the tank. Rectify any faults",
+      "Drain tank and pressure jet tank interior for lime. For other chemicals, pressure jet if instructed. Replace manhole gasket if manhole was opened. Replace other flange gaskets where needed."
+    ]
+  },
+  {
+    "Service No": "ME91.03",
+    "Basic Inspection": [
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Main Equipment",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Pipes and Fittings",
+      "Check for signs of leaks, cracks, damages and touch up with new paint (if applicable) on Auxiliary Valves",
+      "Check for signs of leaks, cracks, damages on Strainers (if available); to clean internal of strainer if required",
+      "Check for faulty pressure gauges (if available); replace faulty gauges",
+      "Tighten any loose bolts and nuts. Replace rusty bolts and nuts",
+      "Record and trend the running temperature and pressure reading of the heat exchanger inlet and outlet, if no SCADA trending available",
+      "Check and top-up refrigerant if required",
+      "Check the water level in the storage tank, if found the water level drop, open the valve until it overflows then close back, if applicable",
+      "Check and refill compressor oil level, if necessary"
+    ]
+  },
+  {
+    "Service No": "ME91.06",
+    "Basic Servicing": [
+      "Flush Clean external of condenser coils to remove dirt or airborne particle build-up.",
+      "Remove the screen filter from the strainer and clean, if applicable",
+      "Drain off the water tank, and replace the water, if applicable",
+      "Test run equipment before handing over to Ops, if any parts replaced"
+    ]
+  },
+  {
+    "Service No": "MA91.12",
+    "Advanced Inspection": [
+      "Performance of detailed inspection by OEM"
+    ]
+  }
+]
