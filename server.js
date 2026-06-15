@@ -71,9 +71,12 @@ async function sendWhatsAppReply(chatId, message) {
 }
 
 // whapi.cloud webhook hits this endpoint
+app.get("/", (req, res) => {
+  res.send("MechAgent is running!");
+});
 app.post("/webhook", async (req, res) => {
   res.sendStatus(200); // Acknowledge immediately
-
+  console.log(JSON.stringify(req.body, null, 2));
   const messages = req.body?.messages || [];
 
   for (const msg of messages) {
