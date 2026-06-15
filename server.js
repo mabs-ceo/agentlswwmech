@@ -82,7 +82,8 @@ app.post("/webhook", async (req, res) => {
   for (const msg of messages) {
     const text = msg?.text?.body?.trim().toLowerCase() || "";
     const chatId = msg?.chat_id;
-    const fromGroup = chatId?.includes("@g.us"); // WhatsApp group ID format
+    const ALLOWED_GROUP_ID = process.env.GROUP;
+    const fromGroup = chatId === ALLOWED_GROUP_ID && chatId?.includes("@g.us"); // WhatsApp group ID format
 
     // Only respond to group messages with the command prefix
     if (!fromGroup || !text.startsWith(COMMAND_PREFIX)) continue;
