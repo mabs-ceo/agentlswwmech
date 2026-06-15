@@ -1,9 +1,12 @@
 // server.js
 const express = require("express");
 const axios = require("axios");
+const dotenv = require("dotenv");
+dotenv.config();
 const fs = require("fs");
 const app = express();
 app.use(express.json());
+const port = process.env.PORT;
 
 const WHAPI_TOKEN = process.env.WHAPI_TOKEN;
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
@@ -98,4 +101,4 @@ app.post("/webhook", async (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log("🚀 Bot server running on port 3000"));
+app.listen(port, () => console.log(`🚀 Bot server running on port ${port}`));
