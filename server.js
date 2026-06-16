@@ -70,7 +70,10 @@ async function askAI(question) {
       },
     },
   );
+  console.log(`✅ AI responded with status ${response}`);
   const raw = response.data.choices[0].message.content;
+  console.log(`🔍 Raw AI response: ${raw}`);
+
   const clean = raw.replace(/```json|```/g, "").trim();
   const parsed = JSON.parse(clean);
   if (parsed.status === "NOT_FOUND") {
