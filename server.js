@@ -21,13 +21,6 @@ const knowledgeBase = JSON.parse(
   fs.readFileSync("./knowledge_base.json", "utf-8"),
 );
 
-// function buildContext(maxChars = 40000) {
-//   return Object.entries(knowledgeBase)
-//     .map(([filename, content]) => `--- Document: ${filename} ---\n${content}`)
-//     .join("\n\n")
-//     .slice(0, maxChars);
-// }
-
 function buildContext(maxChars = 40000) {
   let combined = "";
 
@@ -39,8 +32,35 @@ function buildContext(maxChars = 40000) {
 
   return combined;
 }
+// Add this to server.js
+function getRelevantContext(question, maxChars = 30000) {
+  const keywords = question.toLowerCase().split(/\s+/);
+  const scored = [];
+
+  for (const [filename, content] of Object.entries(knowledgeBase)) {
+    // Score each document by how many question keywords appear
+    const contentLower = content.toLowerCase();
+    const score = keywords.reduce((acc, kw) => {
+      return acc + (contentLower.split(kw).length - 1);
+    }, 0);
+
+    scored.push({ filename, content, score });
+  }
+
+  // Sort by relevance score descending
+  scored.sort((a, b) => b.score - a.score);
+
+  let combined = "";
+  for (const { filename, content } of scored) {
+    const chunk = `--- Document: ${filename} ---\n${content}\n\n`;
+    if ((combined + chunk).length > maxChars) break;
+    combined += chunk;
+  }
+
+  return combined;
+}
 async function askAI(question) {
-  const context = buildContext();
+  const context = getRelevantContext(question);
   console.log(`📦 Context size: ${context.length} characters`);
   const prompt = groupAgentPrompt({ context, question });
 
