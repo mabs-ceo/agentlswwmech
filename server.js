@@ -6,6 +6,7 @@ const { OpenRouter } = require("@openrouter/sdk");
 
 dotenv.config();
 const fs = require("fs");
+const groupAgentPrompt = require("./groupAgentPromt");
 const app = express();
 app.use(express.json());
 const port = process.env.PORT;
