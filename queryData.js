@@ -36,7 +36,31 @@ function detectIntent(question) {
   if (q.includes("rate") || q.includes("cost") || q.includes("price")) {
     return { type: "FSOR_RATE", query: question };
   }
+  if (
+    q.includes("cost") ||
+    q.includes("rate") ||
+    q.includes("price") ||
+    q.includes("how much")
+  ) {
+    const keyword = question
+      .replace(/cost|rate|price|how much|what is|of|the/gi, "")
+      .trim();
+    return { type: "FSOR_SEARCH", keyword };
+  }
 
+  if (
+    q.includes("replac") &&
+    (q.includes("june") || q.includes("month") || extractMonth(q))
+  ) {
+    return { type: "REPLACEMENT_BY_MONTH", month: extractMonth(q) };
+  }
+
+  if (q.includes("replac")) {
+    const keyword = question
+      .replace(/replacement|replace|what|needs|are|there/gi, "")
+      .trim();
+    return { type: "REPLACEMENT_SEARCH", keyword };
+  }
   return { type: "GENERAL", query: question };
 }
 
@@ -161,7 +185,42 @@ function runQuery(intent) {
         data: fsorData.slice(0, 50), // limit to avoid overload
       };
     }
+    // Update runQuery()
+    case "FSOR_SEARCH":
+      return (
+        `💰 *FSOR: "${result.keyword}"* (${result.total} found)\n\n` +
+        result.items
+          .map(
+            (r) =>
+              `📋 *Item ${r["Item"]}*\n${r["Long Description"]}\n💵 ${r["Rate ($)"] || "No rate"} / ${r["Unit of Measure"] || "-"}`,
+          )
+          .join("\n\n")
+      );
 
+    case "REPLACEMENT_BY_MONTH":
+      if (result.total === 0) {
+        return `✅ No replacement tasks found in scheduled PMs for ${result.month}`;
+      }
+      return (
+        `🔧 *Replacements scheduled for ${result.month}* (${result.total} items)\n\n` +
+        result.items
+          .map(
+            (j, i) =>
+              `${i + 1}. ${j.equipment}\n   📍 ${j.location} | 🔧 ${j.svcPkg}`,
+          )
+          .join("\n\n")
+      );
+
+    case "REPLACEMENT_SEARCH":
+      return (
+        `🔧 *Replacement items* (${result.total} found)\n\n` +
+        result.items
+          .map(
+            (r) =>
+              `📋 *Item ${r["Item"]}*\n${r["Long Description"]}\n💵 ${r["Rate ($)"] || "No rate"} / ${r["Unit of Measure"] || "-"}`,
+          )
+          .join("\n\n")
+      );
     default:
       return { found: false, type: "GENERAL" };
   }
