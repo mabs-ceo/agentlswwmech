@@ -31,14 +31,32 @@ async function askAI(question) {
   const context = buildContext();
   const prompt = groupAgentPrompt({ context, question });
 
-  const response = await openrouter.chat.completions.create({
-    model: "openai/gpt-4o-mini",
-    messages: [
-      { role: "system", content: prompt.system },
-      { role: "user", content: prompt.user },
-    ],
-  });
-
+  //   const response = await openrouter.chat.completions.create({
+  //     model: "openai/gpt-4o-mini",
+  //     messages: [
+  //       { role: "system", content: prompt.system },
+  //       { role: "user", content: prompt.user },
+  //     ],
+  //   });
+  const response = await axios.post(
+    "https://openrouter.ai/api/v1/chat/completions",
+    {
+      model: "openai/gpt-4o-mini",
+      messages: [
+        { role: "system", content: prompt.system },
+        { role: "user", content: prompt.user },
+      ],
+      max_tokens: 1000,
+    },
+    {
+      headers: {
+        Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
+        "Content-Type": "application/json",
+        "HTTP-Referer": "https://yourdomain.com",
+        "X-Title": "WhatsApp Agent",
+      },
+    },
+  );
   return response.choices[0].message.content;
 }
 
