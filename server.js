@@ -21,14 +21,27 @@ const knowledgeBase = JSON.parse(
   fs.readFileSync("./knowledge_base.json", "utf-8"),
 );
 
-function buildContext() {
-  return Object.entries(knowledgeBase)
-    .map(([filename, content]) => `--- Document: ${filename} ---\n${content}`)
-    .join("\n\n");
-}
+// function buildContext(maxChars = 40000) {
+//   return Object.entries(knowledgeBase)
+//     .map(([filename, content]) => `--- Document: ${filename} ---\n${content}`)
+//     .join("\n\n")
+//     .slice(0, maxChars);
+// }
 
+function buildContext(maxChars = 40000) {
+  let combined = "";
+
+  for (const [filename, content] of Object.entries(knowledgeBase)) {
+    const chunk = `--- Document: ${filename} ---\n${content}\n\n`;
+    if ((combined + chunk).length > maxChars) break;
+    combined += chunk;
+  }
+
+  return combined;
+}
 async function askAI(question) {
   const context = buildContext();
+  console.log(`📦 Context size: ${context.length} characters`);
   const prompt = groupAgentPrompt({ context, question });
 
   //   const response = await openrouter.chat.completions.create({
@@ -57,7 +70,14 @@ async function askAI(question) {
       },
     },
   );
-  return response.choices[0].message.content;
+  const raw = response.data.choices[0].message.content;
+  const clean = raw.replace(/```json|```/g, "").trim();
+  const parsed = JSON.parse(clean);
+  if (parsed.status === "NOT_FOUND") {
+    return "❌ I couldn't find that in the documents.";
+  }
+
+  return `${parsed.answer}\n\n📎 *References:* ${parsed.references.join(", ")}`;
 }
 
 async function sendWhatsAppReply(chatId, message) {
@@ -100,7 +120,10 @@ app.post("/webhook", async (req, res) => {
       console.log(`🤖 Answer: ${answer}`);
       await sendWhatsAppReply(chatId, `🤖 *Agent:*\n${answer}`);
     } catch (err) {
-      console.error("❌ Error in agent:", err.message);
+      console.error(
+        "❌ Full error:",
+        JSON.stringify(err.response?.data, null, 2),
+      );
       await sendWhatsAppReply(
         chatId,
         "⚠️ Agent encountered an error. Try again.",
