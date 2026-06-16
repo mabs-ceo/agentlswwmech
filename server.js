@@ -34,27 +34,56 @@ function buildContext(maxChars = 40000) {
 }
 // Add this to server.js
 function getRelevantContext(question, maxChars = 30000) {
-  const keywords = question.toLowerCase().split(/\s+/);
-  const scored = [];
+  const keywords = question
+    .toLowerCase()
+    .replace(/[^\w\s]/g, "")
+    .split(/\s+/)
+    .filter((w) => w.length > 3); // ignore short words like "how", "are", "the"
+
+  console.log(`🔑 Keywords: ${keywords.join(", ")}`);
+
+  const results = [];
 
   for (const [filename, content] of Object.entries(knowledgeBase)) {
-    // Score each document by how many question keywords appear
-    const contentLower = content.toLowerCase();
-    const score = keywords.reduce((acc, kw) => {
-      return acc + (contentLower.split(kw).length - 1);
-    }, 0);
+    // Split content into chunks of ~500 chars
+    const lines = content.split("\n").filter((l) => l.trim().length > 0);
+    const chunks = [];
 
-    scored.push({ filename, content, score });
+    for (let i = 0; i < lines.length; i += 10) {
+      chunks.push(lines.slice(i, i + 10).join("\n"));
+    }
+
+    for (const chunk of chunks) {
+      const chunkLower = chunk.toLowerCase();
+      const score = keywords.reduce((acc, kw) => {
+        return acc + (chunkLower.includes(kw) ? 1 : 0);
+      }, 0);
+
+      if (score > 0) {
+        results.push({ filename, chunk, score });
+      }
+    }
   }
 
-  // Sort by relevance score descending
-  scored.sort((a, b) => b.score - a.score);
+  // Sort by score
+  results.sort((a, b) => b.score - a.score);
 
+  // Build context from top results
   let combined = "";
-  for (const { filename, content } of scored) {
-    const chunk = `--- Document: ${filename} ---\n${content}\n\n`;
-    if ((combined + chunk).length > maxChars) break;
-    combined += chunk;
+  for (const { filename, chunk } of results) {
+    const piece = `--- From: ${filename} ---\n${chunk}\n\n`;
+    if ((combined + piece).length > maxChars) break;
+    combined += piece;
+  }
+
+  // Fallback — if nothing matched, just take the start of each doc
+  if (!combined) {
+    console.log("⚠️ No keyword matches — using fallback");
+    for (const [filename, content] of Object.entries(knowledgeBase)) {
+      const piece = `--- Document: ${filename} ---\n${content.slice(0, 3000)}\n\n`;
+      if ((combined + piece).length > maxChars) break;
+      combined += piece;
+    }
   }
 
   return combined;
@@ -90,7 +119,7 @@ async function askAI(question) {
       },
     },
   );
-  console.log(`✅ AI responded with status ${response}`);
+  console.log(`✅ AI responded with status ${response.status}`);
   const raw = response.data.choices[0].message.content;
   console.log(`🔍 Raw AI response: ${raw}`);
 
