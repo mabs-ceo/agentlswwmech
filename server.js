@@ -5,7 +5,6 @@ const dotenv = require("dotenv");
 dotenv.config();
 const fs = require("fs");
 const groupAgentPrompt = require("./groupAgentPromt");
-const { detectIntent, runQuery } = require("./queryData");
 const app = express();
 app.use(express.json());
 
@@ -110,28 +109,11 @@ function formatAnswer(parsed) {
 
 // ─── AI Call ───────────────────────────────────────────────────────────────────
 async function askAI(question) {
-  // Step 1: Try structured query first
-  const intent = detectIntent(question);
-  const queryResult = runQuery(intent);
-
-  let context = "";
-
-  if (queryResult.found) {
-    // Use precise query result — small and exact
-    context = `QUERY RESULT:\n${JSON.stringify(queryResult, null, 2)}`;
-    console.log(`✅ Structured query hit: ${intent.type}`);
-  } else {
-    // Fallback to keyword search in knowledge base
-    context = getRelevantContext(question);
-    console.log(`⚠️ Falling back to keyword search`);
-  }
-
+  const context = getRelevantContext(question);
   console.log(`📦 Context size: ${context.length} characters`);
 
   const prompt = groupAgentPrompt({ context, question });
-  const isListQuery =
-    question.toLowerCase().includes("list") ||
-    question.toLowerCase().includes("all");
+
   const response = await axios.post(
     "https://openrouter.ai/api/v1/chat/completions",
     {
@@ -140,7 +122,7 @@ async function askAI(question) {
         { role: "system", content: prompt.system },
         { role: "user", content: prompt.user },
       ],
-      max_tokens: isListQuery ? 4000 : 1000, // bump for list queries
+      max_tokens: 1000,
     },
     {
       headers: {
@@ -153,11 +135,13 @@ async function askAI(question) {
   );
 
   console.log(`✅ AI responded with status ${response.status}`);
+
   const raw = response.data.choices[0].message.content;
   console.log(`🔍 Raw AI response: ${raw}`);
 
   const clean = raw.replace(/```json|```/g, "").trim();
   const parsed = JSON.parse(clean);
+
   return formatAnswer(parsed);
 }
 
@@ -203,19 +187,10 @@ app.post("/webhook", async (req, res) => {
       console.log(`🤖 Answer: ${answer}`);
       await sendWhatsAppReply(chatId, `🤖 *Agent:*\n${answer}`);
     } catch (err) {
-      // ❌ This logs undefined when err.response doesn't exist
       console.error(
         "❌ Full error:",
         JSON.stringify(err.response?.data, null, 2),
       );
-
-      // ✅ Log the actual error message too
-      console.error("❌ Error message:", err.message);
-      console.error(
-        "❌ Full error:",
-        JSON.stringify(err.response?.data, null, 2),
-      );
-
       await sendWhatsAppReply(
         chatId,
         "⚠️ Agent encountered an error. Try again.",
