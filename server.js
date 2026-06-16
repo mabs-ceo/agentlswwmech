@@ -1,4 +1,3 @@
-// server.js
 const express = require("express");
 const axios = require("axios");
 const dotenv = require("dotenv");
@@ -9,22 +8,20 @@ const fs = require("fs");
 const groupAgentPrompt = require("./groupAgentPromt");
 const app = express();
 app.use(express.json());
-const port = process.env.PORT;
 
+const port = process.env.PORT;
 const WHAPI_TOKEN = process.env.WHAPI_TOKEN;
-// const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 const COMMAND_PREFIX = "agent:";
+
 const openrouter = new OpenRouter({
   apiKey: process.env.OPENROUTER_API_KEY,
 });
-// Load knowledge base once at startup
+
 const knowledgeBase = JSON.parse(
   fs.readFileSync("./knowledge_base.json", "utf-8"),
 );
 
 function buildContext() {
-  // Combine all docs into one context string
-  // With <20 small docs this is totally fine
   return Object.entries(knowledgeBase)
     .map(([filename, content]) => `--- Document: ${filename} ---\n${content}`)
     .join("\n\n");
@@ -32,34 +29,17 @@ function buildContext() {
 
 async function askAI(question) {
   const context = buildContext();
-  try {
-    const prompt = groupAgentPrompt({
-      context,
-      question,
-    });
+  const prompt = groupAgentPrompt({ context, question });
 
-    const response = await openrouter.chat.send({
-      chatRequest: {
-        model: "openai/gpt-oss-120b:free",
-        messages: [
-          {
-            role: "system",
-            content: prompt.system,
-          },
-          {
-            role: "user",
-            content: prompt.user,
-          },
-        ],
-        stream: false, // no need to stream — you need the full JSON in one shot
-      },
-    });
+  const response = await openrouter.chat.completions.create({
+    model: "openai/gpt-4o-mini",
+    messages: [
+      { role: "system", content: prompt.system },
+      { role: "user", content: prompt.user },
+    ],
+  });
 
-    return response.data.choices[0].message.content;
-  } catch (err) {
-    console.error("Error communicating with OpenRouter:", err);
-    throw new Error("AI service error");
-  }
+  return response.choices[0].message.content;
 }
 
 async function sendWhatsAppReply(chatId, message) {
@@ -75,35 +55,34 @@ async function sendWhatsAppReply(chatId, message) {
   );
 }
 
-// whapi.cloud webhook hits this endpoint
 app.get("/", (req, res) => {
   res.send("MechAgent is running!");
 });
+
 app.post("/webhook", async (req, res) => {
-  res.sendStatus(200); // Acknowledge immediately
+  res.sendStatus(200);
 
   const messages = req.body?.messages || [];
+  const ALLOWED_GROUP_ID = process.env.GROUP;
 
   for (const msg of messages) {
-    const text = msg?.text?.body?.trim().toLowerCase() || "";
+    const rawText = msg?.text?.body?.trim() || "";
+    const text = rawText.toLowerCase();
     const chatId = msg?.chat_id;
-    const ALLOWED_GROUP_ID = process.env.GROUP;
-    const fromGroup = chatId === ALLOWED_GROUP_ID && chatId?.includes("@g.us"); // WhatsApp group ID format
+    const fromGroup = chatId === ALLOWED_GROUP_ID && chatId?.includes("@g.us");
 
-    // Only respond to group messages with the command prefix
     if (!fromGroup || !text.startsWith(COMMAND_PREFIX)) continue;
 
-    const question = msg.text.body.slice(COMMAND_PREFIX.length).trim();
+    const question = rawText.slice(COMMAND_PREFIX.length).trim();
     if (!question) continue;
 
     try {
-      console.log(`📩 Question: Incoming`);
+      console.log(`📩 Question: ${question}`);
       const answer = await askAI(question);
       console.log(`🤖 Answer: ${answer}`);
       await sendWhatsAppReply(chatId, `🤖 *Agent:*\n${answer}`);
     } catch (err) {
-      console.log("❌ Error in agent:", err);
-      console.error(err.message);
+      console.error("❌ Error in agent:", err.message);
       await sendWhatsAppReply(
         chatId,
         "⚠️ Agent encountered an error. Try again.",
