@@ -135,6 +135,24 @@ function runQuery(intent) {
         })),
       };
     }
+    // Add to runQuery()
+    case "FSOR": {
+      if (intent.itemNo) {
+        // Single item lookup
+        const item = fsorData.find((f) => f["Item"] === intent.itemNo);
+        return item
+          ? { found: true, type: "FSOR", data: [item] }
+          : { found: false, reason: `Item ${intent.itemNo} not found` };
+      }
+      // Summary only — never dump all 100+ items
+      return {
+        found: true,
+        type: "FSOR",
+        summary: `There are ${fsorData.length} FSOR line items.`,
+        sample: fsorData.slice(0, 5),
+        tip: "Ask for a specific item number e.g. 'agent: fsor item 740'",
+      };
+    }
 
     case "FSOR_RATE": {
       return {

@@ -129,7 +129,9 @@ async function askAI(question) {
   console.log(`📦 Context size: ${context.length} characters`);
 
   const prompt = groupAgentPrompt({ context, question });
-
+  const isListQuery =
+    question.toLowerCase().includes("list") ||
+    question.toLowerCase().includes("all");
   const response = await axios.post(
     "https://openrouter.ai/api/v1/chat/completions",
     {
@@ -138,7 +140,7 @@ async function askAI(question) {
         { role: "system", content: prompt.system },
         { role: "user", content: prompt.user },
       ],
-      max_tokens: 1000,
+      max_tokens: isListQuery ? 4000 : 1000, // bump for list queries
     },
     {
       headers: {
@@ -201,10 +203,19 @@ app.post("/webhook", async (req, res) => {
       console.log(`🤖 Answer: ${answer}`);
       await sendWhatsAppReply(chatId, `🤖 *Agent:*\n${answer}`);
     } catch (err) {
+      // ❌ This logs undefined when err.response doesn't exist
       console.error(
         "❌ Full error:",
         JSON.stringify(err.response?.data, null, 2),
       );
+
+      // ✅ Log the actual error message too
+      console.error("❌ Error message:", err.message);
+      console.error(
+        "❌ Full error:",
+        JSON.stringify(err.response?.data, null, 2),
+      );
+
       await sendWhatsAppReply(
         chatId,
         "⚠️ Agent encountered an error. Try again.",
