@@ -32,29 +32,34 @@ function buildContext() {
 
 async function askAI(question) {
   const context = buildContext();
-  const prompt = groupAgentPrompt({
-    context,
-    question,
-  });
+  try {
+    const prompt = groupAgentPrompt({
+      context,
+      question,
+    });
 
-  const response = await openrouter.chat.send({
-    chatRequest: {
-      model: "openai/gpt-oss-120b:free",
-      messages: [
-        {
-          role: "system",
-          content: prompt.system,
-        },
-        {
-          role: "user",
-          content: prompt.user,
-        },
-      ],
-      stream: false, // no need to stream — you need the full JSON in one shot
-    },
-  });
+    const response = await openrouter.chat.send({
+      chatRequest: {
+        model: "openai/gpt-oss-120b:free",
+        messages: [
+          {
+            role: "system",
+            content: prompt.system,
+          },
+          {
+            role: "user",
+            content: prompt.user,
+          },
+        ],
+        stream: false, // no need to stream — you need the full JSON in one shot
+      },
+    });
 
-  return response.data.choices[0].message.content;
+    return response.data.choices[0].message.content;
+  } catch (err) {
+    console.error("Error communicating with OpenRouter:", err);
+    throw new Error("AI service error");
+  }
 }
 
 async function sendWhatsAppReply(chatId, message) {
@@ -76,7 +81,7 @@ app.get("/", (req, res) => {
 });
 app.post("/webhook", async (req, res) => {
   res.sendStatus(200); // Acknowledge immediately
-  console.log(JSON.stringify(req.body, null, 2));
+
   const messages = req.body?.messages || [];
 
   for (const msg of messages) {
