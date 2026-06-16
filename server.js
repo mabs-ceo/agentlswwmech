@@ -129,7 +129,36 @@ async function askAI(question) {
     return "❌ I couldn't find that in the documents.";
   }
 
-  return `${parsed.answer}\n\n📎 *References:* ${parsed.references.join(", ")}`;
+  // ✅ Handle when answer is object or array
+  let answerText = "";
+
+  if (typeof parsed.answer === "string") {
+    answerText = parsed.answer;
+  } else if (Array.isArray(parsed.answer)) {
+    // Format array as a numbered list
+    answerText = parsed.answer
+      .map((item, i) => {
+        if (typeof item === "object") {
+          return `${i + 1}. ${Object.entries(item)
+            .map(([k, v]) => `*${k}:* ${v}`)
+            .join(" | ")}`;
+        }
+        return `${i + 1}. ${item}`;
+      })
+      .join("\n");
+  } else if (typeof parsed.answer === "object") {
+    // Format object as key-value pairs
+    answerText = Object.entries(parsed.answer)
+      .map(([k, v]) => {
+        if (Array.isArray(v)) {
+          return `*${k}:*\n${v.map((item, i) => `  ${i + 1}. ${item}`).join("\n")}`;
+        }
+        return `*${k}:* ${v}`;
+      })
+      .join("\n");
+  }
+
+  return `${answerText}\n\n📎 *References:* ${parsed.references.join(", ")}`;
 }
 
 async function sendWhatsAppReply(chatId, message) {
