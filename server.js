@@ -2,6 +2,8 @@
 const express = require("express");
 const axios = require("axios");
 const dotenv = require("dotenv");
+const { OpenRouter } = require("@openrouter/sdk");
+
 dotenv.config();
 const fs = require("fs");
 const app = express();
@@ -9,9 +11,11 @@ app.use(express.json());
 const port = process.env.PORT;
 
 const WHAPI_TOKEN = process.env.WHAPI_TOKEN;
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+// const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 const COMMAND_PREFIX = "agent:";
-
+const openrouter = new OpenRouter({
+  apiKey: process.env.OPENROUTER_API_KEY,
+});
 // Load knowledge base once at startup
 const knowledgeBase = JSON.parse(
   fs.readFileSync("./knowledge_base.json", "utf-8"),
@@ -27,32 +31,27 @@ function buildContext() {
 
 async function askAI(question) {
   const context = buildContext();
+  const prompt = groupAgentPrompt({
+    context,
+    question,
+  });
 
-  const response = await axios.post(
-    "https://api.openai.com/v1/chat/completions",
-    {
-      model: "gpt-4o-mini", // cheap and fast
+  const response = await openrouter.chat.send({
+    chatRequest: {
+      model: "openai/gpt-oss-120b:free",
       messages: [
         {
           role: "system",
-          content: `You are a document assistant. Answer ONLY from the provided documents. 
-If the answer is not found, say "I couldn't find that in the documents."
-Keep answers concise and factual.
-
-DOCUMENTS:
-${context}`,
+          content: prompt.system,
         },
         {
           role: "user",
-          content: question,
+          content: prompt.user,
         },
       ],
-      max_tokens: 500,
+      stream: false, // no need to stream — you need the full JSON in one shot
     },
-    {
-      headers: { Authorization: `Bearer ${OPENAI_API_KEY}` },
-    },
-  );
+  });
 
   return response.data.choices[0].message.content;
 }
